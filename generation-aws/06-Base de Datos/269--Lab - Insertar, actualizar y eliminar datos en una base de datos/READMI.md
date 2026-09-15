@@ -43,6 +43,7 @@ Elija Connect (Conectar) para abrir una ventana de terminal.
 Nota: Si el botón Connect (Conectar) no está disponible, espere unos minutos y vuelva a intentarlo.
 
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/instancia%20Ec2.jpg)
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/entrar%20a%20la%20consola.png)
 
 
 
