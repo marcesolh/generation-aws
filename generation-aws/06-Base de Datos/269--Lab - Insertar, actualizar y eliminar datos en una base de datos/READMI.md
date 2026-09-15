@@ -11,6 +11,7 @@ Eliminar filas de una tabla
 Importar filas de un archivo de respaldo de base de datos
 Cuando comience este laboratorio, los siguientes recursos ya estarán creados para usted:
 
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/recursos1.jpg)
 
 
 
