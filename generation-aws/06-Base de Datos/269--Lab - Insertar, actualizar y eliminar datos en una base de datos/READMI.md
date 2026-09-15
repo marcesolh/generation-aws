@@ -105,7 +105,7 @@ SELECT * FROM world.country;
 ```
 La tabla ahora debe contener dos filas y debe aparecer como se muestra a continuación:
 
-![]()
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/Descripci%C3%B3n2.png)
 
 
 
