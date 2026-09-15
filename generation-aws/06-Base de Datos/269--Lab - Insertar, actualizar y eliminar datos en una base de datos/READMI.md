@@ -1,4 +1,4 @@
-# Laboratorio / Práctica: [Insertar, actualizar y eliminar datos en una base de datos]
+# Laboratorio / Práctica: Insertar, actualizar y eliminar datos en una base de datos
 
 ## 📋 Descripción del Reto
 Breve descripción con tus propias palabras de qué problema resolvía este laboratorio o qué objetivo de negocio simulaba la práctica. 
