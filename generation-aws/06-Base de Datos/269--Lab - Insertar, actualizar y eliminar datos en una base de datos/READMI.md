@@ -45,24 +45,18 @@ Nota: Si el botón Connect (Conectar) no está disponible, espere unos minutos y
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/instancia%20Ec2.jpg)
 
 
-Aquí puedes documentar los pasos lógicos que seguiste para resolverlo:
-1. Análisis del diagrama de entidad-relación (ER).
-2. Construcción de las consultas SQL paso a paso.
-
-### Código Destacado
-Inserta los fragmentos de código más importantes o complejos que hayas escrito. Usar bloques de código ayuda a que se vea profesional:
 
 ```sql
--- Ejemplo de consulta desarrollada en el laboratorio
-SELECT 
-    c.nombre_cliente,
-    SUM(f.total_venta) AS total_gastado
-FROM 
-    clientes c
-INNER JOIN 
-    facturas f ON c.id_cliente = f.id_cliente
-GROUP BY 
-    c.nombre_cliente
-ORDER BY 
-    total_gastado DESC;
+-- 1.-Para configurar la terminal para acceder a todas las herramientas y recursos necesarios, ejecutando el siguiente comando:
 
+sh-4.2$ sudo su
+[root@ip-10-1-11-220 bin]# cd /home/ec2-user/
+
+-- 2.-Para conectarse a la instancia de base de datos, se ejecuta el siguiente comando en el terminal. Se configuró una contraseña cuando se instaló la base de datos.
+
+[root@ip-10-1-11-220 ec2-user]# mysql -u root --password='re:St@rt!9'
+
+```
+ El cliente de línea de comandos MySQL es un shell SQL que puede usar para interactuar con los motores de base de datos.
+ 
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/Descripci%C3%B3n1.png)
