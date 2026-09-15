@@ -16,7 +16,7 @@ Cuando comience este laboratorio, los siguientes recursos ya estarán creados pa
 Una instancia de Command Host y una base de datos world que contiene tres tablas
 Al finalizar este laboratorio, la arquitectura se verá como en el siguiente ejemplo:
 
-![]()
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/recursos2.jpg)
 
 
 
