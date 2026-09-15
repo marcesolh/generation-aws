@@ -63,3 +63,12 @@ sh-4.2$ sudo su
  El cliente de línea de comandos MySQL es un shell SQL que puede usar para interactuar con los motores de base de datos.
  
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/Descripci%C3%B3n1.png)
+
+Para mostrar las bases de datos existentes, ingrese el siguiente comando en el terminal. Tome nota delas bases de datos actualmente disponibles.
+```sql
+SHOW DATABASES;
+```
+resultado:
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/C1.png)
+
+
