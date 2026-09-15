@@ -1,8 +1,21 @@
 # Laboratorio / Práctica: Insertar, actualizar y eliminar datos en una base de datos
 
 ## 📋 Descripción del Reto
-Breve descripción con tus propias palabras de qué problema resolvía este laboratorio o qué objetivo de negocio simulaba la práctica. 
-* *Ejemplo:* Consulta de base de datos relacional para obtener métricas de ventas y comportamiento de clientes utilizando funciones de agregación y uniones (JOINs).
+Este laboratorio muestra cómo insertar, actualizar, eliminar e importar filas de datos usando el Lenguaje de consulta estructurada (SQL).
+
+Después de completar este laboratorio, podrá hacer lo siguiente:
+
+Insertar filas en una tabla
+Actualizar filas de una tabla
+Eliminar filas de una tabla
+Importar filas de un archivo de respaldo de base de datos
+Cuando comience este laboratorio, los siguientes recursos ya estarán creados para usted:
+
+
+
+
+## Escenario
+* El equipo de operaciones de base de datos creó una base de datos relacional llamada world que contiene tres tablas: city, country y countrylanguage. Tiene que validar la configuración de la base de datos al ejecutar los statements INSERT, UPDATE y DELETE en la tabla country.  
 
 ## 🛠️ Tecnologías y Herramientas Utilizadas
 * **Base de Datos / Motor:** (Ej. PostgreSQL, MySQL, Amazon RDS, etc.)
