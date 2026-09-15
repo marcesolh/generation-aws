@@ -78,4 +78,31 @@ resultado:
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/C2.png)
 
 
+Tarea 2: Insertar datos en una tabla
+En esta tarea, insertará datos de muestra en la tabla country.
+
+1-Para verificar que la tabla country este vacía, ejecute el siguiente comando. La statement SELECT se usa para identificar las columnas que se deben incluir en el conjunto de resultados. El uso de * indica todas las columnas. La cláusula FROM se usa en el siguiente ejemplo para especificar la base de datos y la tabla que se está consultando.
+
+```sql
+SELECT * FROM world.country;
+```
+La tabla debe estar vacía porque se acaba de crear.
+
+2-Para insertar filas en la tabla country, ejecute los siguientes comandos. Los valores en la cláusula VALUES deben estar en el mismo oren que se definió en el esquema de tabla. 
+
+```sql
+INSERT INTO world.country VALUES ('IRL','Ireland','Europe','British Islands',70273.00,1921,3775100,76.8,75921.00,73132.00,'Ireland/Éire','Republic',1447,'IE');
+
+INSERT INTO world.country VALUES ('AUS','Australia','Oceania','Australia and New Zealand',7741220.00,1901,18886000,79.8,351182.00,392911.00,'Australia','Constitutional Monarchy, Federation',135,'AU');
+```
+3-Para verificar que se insertaron dos filas correctamente en la tabla country, ejecute la siguiente consulta.
+
+```sql
+SELECT * FROM world.country;
+```
+La tabla ahora debe contener dos filas y debe aparecer como se muestra a continuación:
+
+
+
+
 
