@@ -38,12 +38,13 @@ En la Consola de administración de AWS, seleccione el menú  Services (Servicio
 En el panel de navegación izquierdo, elija Instances (Instancias).
 Junto a la instancia etiquetada Command Host, seleccione la casilla  y luego seleccione Connect (Conectar).
 Nota: Si no ve Command Host, probablemente el laboratorio aún está siendo aprovisionado, o quizás esté usando otra Región.
+
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/instancia%20Ec2.jpg)
 En Connect to instance (Conexión a instancia), elija la pestaña Session Manager.
 Elija Connect (Conectar) para abrir una ventana de terminal.
 Nota: Si el botón Connect (Conectar) no está disponible, espere unos minutos y vuelva a intentarlo.
-
-![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/instancia%20Ec2.jpg)
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/entrar%20a%20la%20consola.png)
+consola.
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/Consola.png)
 
 
