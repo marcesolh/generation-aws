@@ -95,6 +95,9 @@ INSERT INTO world.country VALUES ('IRL','Ireland','Europe','British Islands',702
 
 INSERT INTO world.country VALUES ('AUS','Australia','Oceania','Australia and New Zealand',7741220.00,1901,18886000,79.8,351182.00,392911.00,'Australia','Constitutional Monarchy, Federation',135,'AU');
 ```
+resultado: 
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/Insert1.png)
+
 3-Para verificar que se insertaron dos filas correctamente en la tabla country, ejecute la siguiente consulta.
 
 ```sql
@@ -102,7 +105,7 @@ SELECT * FROM world.country;
 ```
 La tabla ahora debe contener dos filas y debe aparecer como se muestra a continuación:
 
-
+![]()
 
 
 
