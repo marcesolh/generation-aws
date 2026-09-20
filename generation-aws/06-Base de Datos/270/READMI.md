@@ -22,12 +22,12 @@ Después de completar este laboratorio, podrá realizar lo siguiente:
 
 * Use las siguientes operaciones para consultar una base de datos:
 
-<
->
-=
-WHERE
-ORDER BY
-AND
+** <
+** >
+** =
+** WHERE
+** ORDER BY
+** AND
 
 Cuando comience este en laboratorio, los siguientes recursos ya estarán creados para usted:
 ![]()
