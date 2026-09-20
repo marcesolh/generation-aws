@@ -34,7 +34,8 @@ Los datos de muestra en este curso se obtuvieron de Statistics Finland, estadís
 
 
 ## 🚀 Desarrollo y Solución
-Tarea 1: Conectar a una base de datos
+
+## Tarea 1: Conectar a una base de datos
 
 En esta tarea, se conecta a una instancia que contiene un cliente de base de datos, que se usa para conectarse a una base de datos. Esta instancia se conoce como Command Host.
 En la Consola de administración de AWS, seleccione el menú  Services (Servicios). En Compute (Cómputo), seleccione EC2.
@@ -81,7 +82,7 @@ resultado:
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/C2.png)
 
 
-Tarea 2: Insertar datos en una tabla
+## Tarea 2: Insertar datos en una tabla
 En esta tarea, insertará datos de muestra en la tabla country.
 
 1-Para verificar que la tabla country este vacía, ejecute el siguiente comando. La statement SELECT se usa para identificar las columnas que se deben incluir en el conjunto de resultados. El uso de * indica todas las columnas. La cláusula FROM se usa en el siguiente ejemplo para especificar la base de datos y la tabla que se está consultando.
@@ -113,10 +114,7 @@ La tabla ahora debe contener dos filas y debe aparecer como se muestra a continu
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/tabla%20country.png)
 
 
-
-
-
-Tarea 3: Actualizar filas en una tabla
+## Tarea 3: Actualizar filas en una tabla
 En esta tarea, actualizará ambas filas en la tabla country usand una statement UPDATE.
 Para establecer el valor en la columna Population en 0 para ambas filas en la tabla country, ejecute la siguiente statement UPDATE. 
 
@@ -150,10 +148,7 @@ SELECT * FROM world.country;
 
 
 
-
-
-
-Tarea 4: Eliminar filas de una tabla
+## Tarea 4: Eliminar filas de una tabla
 
 En esta tarea, actualizará ambas filas en la tabla country usando una statement DELETE. 
 
@@ -173,3 +168,4 @@ SELECT * FROM world.country;
 ```
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/del2.png)
 
+##
