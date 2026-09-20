@@ -4,8 +4,6 @@
 El equipo de operaciones de base de datos creó una base de datos relacional llamada world que contiene tres tablas: city, country y countrylanguage. Según los casos prácticos específicos definidos en el ejercicio de laboratorio, escribirá algunas consultas usando operadores de base de datos y la statement SELECT.
 
 
-Breve descripción con tus propias palabras de qué problema resolvía este laboratorio o qué objetivo de negocio simulaba la práctica. 
-* *Ejemplo:* Consulta de base de datos relacional para obtener métricas de ventas y comportamiento de clientes utilizando funciones de agregación y uniones (JOINs).
 
 ## 🛠️ Tecnologías y Herramientas Utilizadas
 * **Base de Datos / Motor:** (Ej. PostgreSQL, MySQL, Amazon RDS, etc.)
