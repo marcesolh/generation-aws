@@ -123,6 +123,7 @@ Para establecer el valor en la columna Population en 0 para ambas filas en la ta
 ```sql
 UPDATE world.country SET Population = 0;
 ```
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/Cap1.png).
 
 Todas las filas se actualizan porque la statement UPDATE no incluye una condición WHERE. Una cláusula WHERE usa condiciones para filtrar filas arrojadas por una consulta. El siguiente laboratorio introduce la cláusula WHERE.
 
@@ -131,15 +132,20 @@ Para verificar que la columna Population en la tabla country se actualizó, ejec
 ```sql
 SELECT * FROM world.country;
 ```
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/Cap2.png).
+
 Para establecer el valor en la columna Population en 0 para ambas filas en la tabla country, ejecute la siguiente statement UPDATE.
 
 ```sql
 UPDATE world.country SET Population = 100, SurfaceArea = 100;
 ```
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/Cap3.png).
+
 Para verificar que la columna Population y SurfaceArea en la tabla country se actualizaron, ejecute el siguiente comando.
 
 ```sql
 SELECT * FROM world.country;
 ```
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/Cap4.png).
 
 
