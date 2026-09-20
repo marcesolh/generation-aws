@@ -188,6 +188,7 @@ Insertar las filas individuales en una tabla es un proceso lento. Puede crear un
 mysql -u root --password='re:St@rt!9' < /home/ec2-user/world.sql
 ```
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/q3.png)
+
 Este archivo de base de datos agrega dos tablas adicionales e inserta datos en las tres etiquetas.
 
 Para reconectarse a la base de datos, ejecute el siguiente comando.
@@ -195,12 +196,14 @@ Para reconectarse a la base de datos, ejecute el siguiente comando.
 mysql -u root --password='re:St@rt!9'
 ```
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/q4.png)
+
 Para verificar que el script se ejecutó correctamente, ejecute el siguiente comando.
 ```sql
 USE world;
 SHOW TABLES;
 ```
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/q5.png)
+
 Observe haya tres tablas llamadas city, country y countrylanguage.
 
 Para verificar que las filas se cargaron correctamente, ejecute el siguiente comando.
