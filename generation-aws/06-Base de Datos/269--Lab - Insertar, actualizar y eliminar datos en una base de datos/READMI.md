@@ -48,6 +48,7 @@ Nota: Si no ve Command Host, probablemente el laboratorio aún está siendo apro
 En Connect to instance (Conexión a instancia), elija la pestaña Session Manager.
 Elija Connect (Conectar) para abrir una ventana de terminal.
 Nota: Si el botón Connect (Conectar) no está disponible, espere unos minutos y vuelva a intentarlo.
+
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/269--Lab%20-%20Insertar%2C%20actualizar%20y%20eliminar%20datos%20en%20una%20base%20de%20datos/269/entrar%20a%20la%20consola.png)
 
 consola.
@@ -103,6 +104,7 @@ INSERT INTO world.country VALUES ('IRL','Ireland','Europe','British Islands',702
 
 INSERT INTO world.country VALUES ('AUS','Australia','Oceania','Australia and New Zealand',7741220.00,1901,18886000,79.8,351182.00,392911.00,'Australia','Constitutional Monarchy, Federation',135,'AU');
 ```
+
 resultado: 
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/269--Lab%20-%20Insertar%2C%20actualizar%20y%20eliminar%20datos%20en%20una%20base%20de%20datos/269/Insert1.png)
 
@@ -159,6 +161,7 @@ En esta tarea, actualizará ambas filas en la tabla country usando una statement
 Tenga cuidado cuando use statements de manipulación de datos como UPDATE y DELETE ya que estos cambios pueden no ser reversibles. 
 
 Para eliminar las filas ALL desde la tabla country, ejecute el siguiente comando. 
+
 ```sql
 DELETE FROM world.country;
 ```
@@ -167,6 +170,7 @@ DELETE FROM world.country;
 Ya que la statement DELETE no incluye una condición WHERE, se eliminan todas las filas.
 
 Para verificar que todas las filas se eliminaron de la tabla country, ejecute el siguiente comando.
+
 ```sql
 SELECT * FROM world.country;
 ```
@@ -177,17 +181,21 @@ SELECT * FROM world.country;
 En esta tarea, insertará datos de muestra en la tabla country usando un archivo SQL.
 
 Para salir del terminal MySQL, ejecute el siguiente comando:
+
 ```sql
 QUIT;
 ```
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/269--Lab%20-%20Insertar%2C%20actualizar%20y%20eliminar%20datos%20en%20una%20base%20de%20datos/269/q1.png)
+
 Para verificar que el archivo world.sql se haya descargado, ejecute el siguiente comando.
 ```sql
 ls /home/ec2-user/world.sql
 ```
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/269--Lab%20-%20Insertar%2C%20actualizar%20y%20eliminar%20datos%20en%20una%20base%20de%20datos/269/q2.png)
+
 Recuperar comandos de Linux
 Insertar las filas individuales en una tabla es un proceso lento. Puede crear un archivo de script SQL que contiene un grupo de statements SQL para cargar datos rápidamente en una base de datos. Para cargar filas en la tabla country, ejecute el siguiente comando.
+
 ```sql
 mysql -u root --password='re:St@rt!9' < /home/ec2-user/world.sql
 ```
@@ -211,6 +219,7 @@ SHOW TABLES;
 Observe haya tres tablas llamadas city, country y countrylanguage.
 
 Para verificar que las filas se cargaron correctamente, ejecute el siguiente comando.
+
 ```sql
 SELECT * FROM country;
 ```
