@@ -163,25 +163,30 @@ Cree una tabla llamada city y agregue dos columnas llamadas Name y Region. Ambas
 
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/268--Lab-Operaciones%20de%20Tabla%20de%20base/268/Cap18.png)
 
+
 resultado: 
+
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/268--Lab-Operaciones%20de%20Tabla%20de%20base/268/Cap19.png)
 
 ## Tarea 3: Eliminar una base de datos y tabla
 En esta tarea, eliminará la base de datos world y la tabla country. 
-
 El comando DROP TABLE se usa para eliminar (descartar) una tabla en una base de datos. Una vez que se descarta una tabla, no se puede recuperar a menos que haya un respaldo disponiible. Para descartar la tabla city, ejecute el siguiente comando.
 ```sql
 DROP TABLE world.city;
 ```
+
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/268--Lab-Operaciones%20de%20Tabla%20de%20base/268/Cap20.png)
+
 
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/268--Lab-Operaciones%20de%20Tabla%20de%20base/268/Cap21.png)
 
 ## Desafío 2
 Escribe una consulta y descarte la tabla country.
+
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/268--Lab-Operaciones%20de%20Tabla%20de%20base/268/Cap22.png)
 
 Resultado:
+
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/268--Lab-Operaciones%20de%20Tabla%20de%20base/268/Cap23.png)
 
 Para verificar que ambas tablas se hayan descartado, ejecute la siguiente consulta.
