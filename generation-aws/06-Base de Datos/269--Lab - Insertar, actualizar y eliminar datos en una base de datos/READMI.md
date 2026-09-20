@@ -36,7 +36,7 @@ Tarea 1: Conectar a una base de datos
 En esta tarea, se conecta a una instancia que contiene un cliente de base de datos, que se usa para conectarse a una base de datos. Esta instancia se conoce como Command Host.
 En la Consola de administración de AWS, seleccione el menú  Services (Servicios). En Compute (Cómputo), seleccione EC2.
 En el panel de navegación izquierdo, elija Instances (Instancias).
-Junto a la instancia etiquetada Command Host, seleccione la casilla  y luego seleccione Connect (Conectar).
+Junto a la instancia etiquetada Command Host, seleccione la casilla  y luego seleccione Connect (Conectar)(referido en la siguiente imagen).
 Nota: Si no ve Command Host, probablemente el laboratorio aún está siendo aprovisionado, o quizás esté usando otra Región.
 
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/instancia%20Ec2.jpg)
