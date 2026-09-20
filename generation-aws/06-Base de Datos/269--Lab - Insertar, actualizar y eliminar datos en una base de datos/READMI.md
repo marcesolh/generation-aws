@@ -70,7 +70,8 @@ sh-4.2$ sudo su
 
 resultado:
 
-![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/C1.png)
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/269--Lab%20-%20Insertar%2C%20actualizar%20y%20eliminar%20datos%20en%20una%20base%20de%20datos/269/C1.png)
+
 
 Para mostrar las bases de datos existentes, ingrese el siguiente comando en el terminal. Tome nota delas bases de datos actualmente disponibles.
 ```sql
