@@ -212,3 +212,5 @@ SELECT * FROM country;
 ```
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/q6.png)
 
+Tenga en cuenta que hay más entradas en la tabla country.
+
