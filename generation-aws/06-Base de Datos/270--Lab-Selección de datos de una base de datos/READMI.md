@@ -44,8 +44,7 @@ Junto a la instancia etiquetada Command Host, seleccione la casilla  y luego sel
 
 Nota: Si no ve Command Host, probablemente el laboratorio aún está siendo aprovisionado, o quizás esté usando otra Región.
 
-![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/270--Lab-Selecci%C3%B3n%20de%20datos%20de%20una%20base%20de%20datos/270/270-1.png
-)
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/270--Lab-Selecci%C3%B3n%20de%20datos%20de%20una%20base%20de%20datos/270/270-1.png)
 
 Para Connect to instance (Conectarse a instancia), seleccione la pestaña Session Manager.
 
@@ -60,6 +59,7 @@ Para configurar la terminal para acceder a todas las herramientas y recursos nec
 sudo su
 cd /home/ec2-user/
 ```
+
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/270--Lab-Selecci%C3%B3n%20de%20datos%20de%20una%20base%20de%20datos/270/Cap3.png)
 Para conectarse al servicio de base de datos, ejecute el siguiente comando en el terminal. Se configuró una contraseña cuando se instaló la base de datos.
 
@@ -71,11 +71,12 @@ mysql -u root --password='re:St@rt!9'
 
 En esta tarea, consultará la base de datos world usando varias statement SELECT y funciones de la base de datos.
 Para mostrar las bases de datos existentes, ingrese el siguiente comando en el terminal.
+
 ```sql
 SHOW DATABASES;
 ```
-![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/270--Lab-Selecci%C3%B3n%20de%20datos%20de%20una%20base%20de%20datos/270/270-3.png
-)
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/270--Lab-Selecci%C3%B3n%20de%20datos%20de%20una%20base%20de%20datos/270/270-3.png)
+
 Verifique que la base de datos llamada world esté disponible. Si la base de datos world no está disponible, póngase en contacto con su instructor.
 
 Para mostrar una lista de todas las columnas y sus propiedades en la tabla country, ejecute la siguiente consulta.
@@ -85,10 +86,13 @@ SELECT * FROM world.country;
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/270--Lab-Selecci%C3%B3n%20de%20datos%20de%20una%20base%20de%20datos/270/5.png)
 
 Para consultar la cantidad de filas en una tabla, puede usar la función COUNT() en una statement SELECT. Para contar todas las filas en la tabla, puede usar COUNT(*). Para contar la cantidad de filas que tienen un valor en una columna específica, incluya nombre de la columna como un parámetro en la función COUNT(): por ejemplo, COUNT(Population). Para una lista de la cantidad de filas en la tabla country, ejecute la siguiente consulta.
+
 ```sql
 SELECT COUNT(*) FROM world.country;
 ```
+
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/270--Lab-Selecci%C3%B3n%20de%20datos%20de%20una%20base%20de%20datos/270/5.png)
+
 Por una lista de todas las columnas en la tabla country, ejecute la siguiente consulta. Esta consulta se ejecuta para comprender el esquema de la tabla.
 ```sql
 SHOW COLUMNS FROM world.country;
@@ -96,6 +100,7 @@ SHOW COLUMNS FROM world.country;
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/270--Lab-Selecci%C3%B3n%20de%20datos%20de%20una%20base%20de%20datos/270/6.png)
 
 Para consultar columnas específicas en la tabla world, ejecute la siguiente consulta para arrojar un conjunto de resultados que incluya las columnas Name, Capital, Region, SurfaceArea y Population.
+
 ```sql
 SELECT Name, Capital, Region, SurfaceArea, Population FROM world.country;
 ```
