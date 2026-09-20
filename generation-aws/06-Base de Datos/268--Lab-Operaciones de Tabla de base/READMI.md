@@ -66,6 +66,8 @@ Para configurar la terminal para acceder a todas las herramientas y recursos nec
 sudo su
 cd /home/ec2-user/
 ```
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/268--Lab-Operaciones%20de%20Tabla%20de%20base/268/Cap7.png)
+
 Recuperar comandos de Linux
 
 * El comando sudo (SuperUser DO) se usa para ejecutar un comando de Linux con los privilegios de otro usuario.
@@ -76,9 +78,11 @@ Para conectarse a la instancia de base de datos relacional, ejecute el siguiente
 ```sql
 mysql -u root --password='re:St@rt!9'
 ```
-El cliente de línea de comandos MySQL es un shell SQL que puede usar para interactuar con los motores de base de datos.
-![]()
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/268--Lab-Operaciones%20de%20Tabla%20de%20base/268/Cap8.png)
 
+El cliente de línea de comandos MySQL es un shell SQL que puede usar para interactuar con los motores de base de datos.
+
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/268--Lab-Operaciones%20de%20Tabla%20de%20base/268/Cap9.png)
 
 
 
