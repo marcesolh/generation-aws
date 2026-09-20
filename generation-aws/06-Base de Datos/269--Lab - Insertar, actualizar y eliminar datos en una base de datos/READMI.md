@@ -161,11 +161,13 @@ Para eliminar las filas ALL desde la tabla country, ejecute el siguiente comando
 ```sql
 DELETE FROM world.country;
 ```
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/del1.png)
+
 Ya que la statement DELETE no incluye una condición WHERE, se eliminan todas las filas.
 
 Para verificar que todas las filas se eliminaron de la tabla country, ejecute el siguiente comando.
 ```sql
 SELECT * FROM world.country;
 ```
-
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/del2.png)
 
