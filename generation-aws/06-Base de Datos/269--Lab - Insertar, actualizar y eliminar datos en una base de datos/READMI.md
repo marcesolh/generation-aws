@@ -30,6 +30,9 @@ Los datos de muestra en este curso se obtuvieron de Statistics Finland, estadís
 * **Herramienta de Consulta (IDE):** (Ej. DBeaver, pgAdmin, MySQL Workbench, etc.)
 * **Conceptos aplicados:** (Ej. INNER JOIN, GROUP BY, Subconsultas, Índices, etc.)
 
+
+
+
 ## 🚀 Desarrollo y Solución
 Tarea 1: Conectar a una base de datos
 
@@ -108,6 +111,10 @@ La tabla ahora debe contener dos filas y debe aparecer como se muestra a continu
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/Descripci%C3%B3n2.png)
 
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/tabla%20country.png).
+
+
+
+
 
 Tarea 3: Actualizar filas en una tabla
 En esta tarea, actualizará ambas filas en la tabla country usand una statement UPDATE.
