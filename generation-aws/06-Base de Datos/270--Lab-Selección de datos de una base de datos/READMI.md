@@ -107,7 +107,7 @@ Los nombres de columnas de la base de datos en ocasiones no son fáciles de usar
 SELECT Name, Capital, Region, SurfaceArea AS "Surface Area", Population FROM world.country;
 ```
 
-![]()cap5
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/270--Lab-Selecci%C3%B3n%20de%20datos%20de%20una%20base%20de%20datos/270/Cap5.png))
 
 De ser necesario, desplazarse hasta la parte superior de los resultados de la consulta y observe que la columna SurfaceArea se muestre como Surface Area.
 
@@ -124,7 +124,7 @@ Para ordenar los datos en orden descendente, use la opción DESC con ORDER BY. E
 ```sql
 SELECT Name, Capital, Region, SurfaceArea AS "Surface Area", Population FROM world.country ORDER BY Population DESC;
 ```
-![]() cap6
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/270--Lab-Selecci%C3%B3n%20de%20datos%20de%20una%20base%20de%20datos/270/Cap6.png) 
 
 Puede agregar condiciones a las statements SELECT usando la cláusula WHERE. Por ejemplo, para listar todas las filas con una población mayor de 50.000.000, ejecute la siguiente consulta.
 ```sql
