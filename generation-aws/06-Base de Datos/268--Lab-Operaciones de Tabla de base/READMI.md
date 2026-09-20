@@ -13,13 +13,13 @@ Después de completar este laboratorio, podrá realizar lo siguiente:
   
 Cuando comience este en laboratorio, los siguientes recursos ya estarán creados para usted:
 
-![]()
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/268--Lab-Operaciones%20de%20Tabla%20de%20base/268/Cap1.png)
 
 Un cliente de base de datos está instalado en una instancia.
 
 Al final de este laboratorio, habrá completado algunas de las operaciones de base de datos y tablas comunes:
 
-![]()
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/268--Lab-Operaciones%20de%20Tabla%20de%20base/268/Cap2.png)
 
 
 
@@ -38,19 +38,27 @@ El equipo de operaciones de base de datos para una organización configuró una 
 
 En esta tarea, se conectará a una instancia de EC2 configurada con un cliente de base de datos. El cliente se usa para ejecutar las consultas de idioma de consulta estructurada (SQL) contra una base de datos relacional. Esta instancia se conoce como Command Host.
 
+
 En la Consola de administración de AWS, seleccione el menú  Services (Servicios). Selccione Compute (Cómputo) y luego seleccione EC2.
+
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/268--Lab-Operaciones%20de%20Tabla%20de%20base/268/Cap3.png)
 
 En el menú de navegación izquierdo, seleccione Instances (Instancias).
 
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/268--Lab-Operaciones%20de%20Tabla%20de%20base/268/Cap4.png)
+
 Junto a la instancia etiquetada Command Host, seleccione la casilla  y luego seleccione Connect (Conectar).
-
 Nota: Si no ve Command Host, probablemente en laboratorio aún está siendo aprovisionado, o quizás esté usando otra Región.
-
 En Connect to instance (Conexión a instancia), elija la pestaña Session Manager.
 
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/268--Lab-Operaciones%20de%20Tabla%20de%20base/268/Cap5.png)
 Elija Connect (Conectar) para abrir una ventana de terminal.
 
 Nota: Si el botón Connect (Conectar) no está disponible, espere unos minutos y vuelva a intentarlo.
+
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/268--Lab-Operaciones%20de%20Tabla%20de%20base/268/Cap6.png)
+
+
 
 Para configurar la terminal para acceder a todas las herramientas y recursos necesarios, ejecute el siguiente comando:
 
