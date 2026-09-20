@@ -11,12 +11,12 @@ Eliminar filas de una tabla
 Importar filas de un archivo de respaldo de base de datos
 Cuando comience este laboratorio, los siguientes recursos ya estarán creados para usted:
 
-![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/recursos1.jpg)
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/269--Lab%20-%20Insertar%2C%20actualizar%20y%20eliminar%20datos%20en%20una%20base%20de%20datos/269/recursos1.jpg)
 
 Una instancia de Command Host y una base de datos world que contiene tres tablas
 Al finalizar este laboratorio, la arquitectura se verá como en el siguiente ejemplo:
 
-![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/recursos2.jpg)
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/269--Lab%20-%20Insertar%2C%20actualizar%20y%20eliminar%20datos%20en%20una%20base%20de%20datos/269/recursos2.jpg)
 
 Un usuario de laboratorio está conectado a una instancia de base de datos. Se muestran las operaciones Insertar, Actualizar y Eliminar.
 Los datos de muestra en este curso se obtuvieron de Statistics Finland, estadísticas regionales generales, 4 de febrero de 2022.
@@ -43,13 +43,16 @@ En el panel de navegación izquierdo, elija Instances (Instancias).
 Junto a la instancia etiquetada Command Host, seleccione la casilla  y luego seleccione Connect (Conectar)(referido en la siguiente imagen).
 Nota: Si no ve Command Host, probablemente el laboratorio aún está siendo aprovisionado, o quizás esté usando otra Región.
 
-![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/instancia%20Ec2.jpg)
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/269--Lab%20-%20Insertar%2C%20actualizar%20y%20eliminar%20datos%20en%20una%20base%20de%20datos/269/instancia%20Ec2.jpg)
+
 En Connect to instance (Conexión a instancia), elija la pestaña Session Manager.
 Elija Connect (Conectar) para abrir una ventana de terminal.
 Nota: Si el botón Connect (Conectar) no está disponible, espere unos minutos y vuelva a intentarlo.
-![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/entrar%20a%20la%20consola.png)
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/269--Lab%20-%20Insertar%2C%20actualizar%20y%20eliminar%20datos%20en%20una%20base%20de%20datos/269/entrar%20a%20la%20consola.png)
+
 consola.
-![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/Consola.png)
+
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/269--Lab%20-%20Insertar%2C%20actualizar%20y%20eliminar%20datos%20en%20una%20base%20de%20datos/269/Consola.png)
 
 
 
@@ -80,7 +83,7 @@ SHOW DATABASES;
 
 resultado:
 
-![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/C2.png)
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/269--Lab%20-%20Insertar%2C%20actualizar%20y%20eliminar%20datos%20en%20una%20base%20de%20datos/269/C2.png)
 
 
 ## Tarea 2: Insertar datos en una tabla
@@ -101,7 +104,7 @@ INSERT INTO world.country VALUES ('IRL','Ireland','Europe','British Islands',702
 INSERT INTO world.country VALUES ('AUS','Australia','Oceania','Australia and New Zealand',7741220.00,1901,18886000,79.8,351182.00,392911.00,'Australia','Constitutional Monarchy, Federation',135,'AU');
 ```
 resultado: 
-![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/Insert1.png)
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/269--Lab%20-%20Insertar%2C%20actualizar%20y%20eliminar%20datos%20en%20una%20base%20de%20datos/269/Insert1.png)
 
 3-Para verificar que se insertaron dos filas correctamente en la tabla country, ejecute la siguiente consulta.
 
@@ -110,9 +113,9 @@ SELECT * FROM world.country;
 ```
 La tabla ahora debe contener dos filas y debe aparecer como se muestra a continuación:
 
-![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/Descripci%C3%B3n2.png)
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/269--Lab%20-%20Insertar%2C%20actualizar%20y%20eliminar%20datos%20en%20una%20base%20de%20datos/269/Descripci%C3%B3n2.png)
 
-![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/tabla%20country.png)
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/269--Lab%20-%20Insertar%2C%20actualizar%20y%20eliminar%20datos%20en%20una%20base%20de%20datos/269/tabla%20country.png)
 
 
 ## Tarea 3: Actualizar filas en una tabla
@@ -122,7 +125,7 @@ Para establecer el valor en la columna Population en 0 para ambas filas en la ta
 ```sql
 UPDATE world.country SET Population = 0;
 ```
-![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/Cap1.png)
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/269--Lab%20-%20Insertar%2C%20actualizar%20y%20eliminar%20datos%20en%20una%20base%20de%20datos/269/Cap1.png)
 
 Todas las filas se actualizan porque la statement UPDATE no incluye una condición WHERE. Una cláusula WHERE usa condiciones para filtrar filas arrojadas por una consulta. El siguiente laboratorio introduce la cláusula WHERE.
 
@@ -131,7 +134,7 @@ Para verificar que la columna Population en la tabla country se actualizó, ejec
 ```sql
 SELECT * FROM world.country;
 ```
-![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/Cap2.png)
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/269--Lab%20-%20Insertar%2C%20actualizar%20y%20eliminar%20datos%20en%20una%20base%20de%20datos/269/Cap2.png)
 
 Para establecer el valor en la columna Population en 0 para ambas filas en la tabla country, ejecute la siguiente statement UPDATE.
 
@@ -145,7 +148,7 @@ Para verificar que la columna Population y SurfaceArea en la tabla country se ac
 ```sql
 SELECT * FROM world.country;
 ```
-![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/Cap4.png)
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/269--Lab%20-%20Insertar%2C%20actualizar%20y%20eliminar%20datos%20en%20una%20base%20de%20datos/269/Cap4.png)
 
 
 
@@ -159,7 +162,7 @@ Para eliminar las filas ALL desde la tabla country, ejecute el siguiente comando
 ```sql
 DELETE FROM world.country;
 ```
-![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/del1.png)
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/269--Lab%20-%20Insertar%2C%20actualizar%20y%20eliminar%20datos%20en%20una%20base%20de%20datos/269/del1.png)
 
 Ya que la statement DELETE no incluye una condición WHERE, se eliminan todas las filas.
 
@@ -167,7 +170,7 @@ Para verificar que todas las filas se eliminaron de la tabla country, ejecute el
 ```sql
 SELECT * FROM world.country;
 ```
-![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/del2.png)
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/269--Lab%20-%20Insertar%2C%20actualizar%20y%20eliminar%20datos%20en%20una%20base%20de%20datos/269/del2.png)
 
 ## Tarea 5: Importar datos usando un archivo SQL.
 
@@ -177,18 +180,18 @@ Para salir del terminal MySQL, ejecute el siguiente comando:
 ```sql
 QUIT;
 ```
-![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/q1.png)
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/269--Lab%20-%20Insertar%2C%20actualizar%20y%20eliminar%20datos%20en%20una%20base%20de%20datos/269/q1.png)
 Para verificar que el archivo world.sql se haya descargado, ejecute el siguiente comando.
 ```sql
 ls /home/ec2-user/world.sql
 ```
-![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/q2.png)
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/269--Lab%20-%20Insertar%2C%20actualizar%20y%20eliminar%20datos%20en%20una%20base%20de%20datos/269/q2.png)
 Recuperar comandos de Linux
 Insertar las filas individuales en una tabla es un proceso lento. Puede crear un archivo de script SQL que contiene un grupo de statements SQL para cargar datos rápidamente en una base de datos. Para cargar filas en la tabla country, ejecute el siguiente comando.
 ```sql
 mysql -u root --password='re:St@rt!9' < /home/ec2-user/world.sql
 ```
-![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/q3.png)
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/269--Lab%20-%20Insertar%2C%20actualizar%20y%20eliminar%20datos%20en%20una%20base%20de%20datos/269/q3.png)
 
 Este archivo de base de datos agrega dos tablas adicionales e inserta datos en las tres etiquetas.
 
@@ -196,14 +199,14 @@ Para reconectarse a la base de datos, ejecute el siguiente comando.
 ```sql
 mysql -u root --password='re:St@rt!9'
 ```
-![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/q4.png)
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/269--Lab%20-%20Insertar%2C%20actualizar%20y%20eliminar%20datos%20en%20una%20base%20de%20datos/269/q4.png)
 
 Para verificar que el script se ejecutó correctamente, ejecute el siguiente comando.
 ```sql
 USE world;
 SHOW TABLES;
 ```
-![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/q5.png)
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/269--Lab%20-%20Insertar%2C%20actualizar%20y%20eliminar%20datos%20en%20una%20base%20de%20datos/269/q5.png)
 
 Observe haya tres tablas llamadas city, country y countrylanguage.
 
@@ -211,7 +214,7 @@ Para verificar que las filas se cargaron correctamente, ejecute el siguiente com
 ```sql
 SELECT * FROM country;
 ```
-![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/q6.png)
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/269--Lab%20-%20Insertar%2C%20actualizar%20y%20eliminar%20datos%20en%20una%20base%20de%20datos/269/q6.png)
 
 Tenga en cuenta que hay más entradas en la tabla country.
 
