@@ -107,5 +107,26 @@ La tabla ahora debe contener dos filas y debe aparecer como se muestra a continu
 
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/Descripci%C3%B3n2.png)
 
+Tarea 3: Actualizar filas en una tabla
+En esta tarea, actualizará ambas filas en la tabla country usand una statement UPDATE.
+Para establecer el valor en la columna Population en 0 para ambas filas en la tabla country, ejecute la siguiente statement UPDATE. 
+
+
+UPDATE world.country SET Population = 0;
+Todas las filas se actualizan porque la statement UPDATE no incluye una condición WHERE. Una cláusula WHERE usa condiciones para filtrar filas arrojadas por una consulta. El siguiente laboratorio introduce la cláusula WHERE.
+
+Para verificar que la columna Population en la tabla country se actualizó, ejecute el siguiente comando.
+
+
+SELECT * FROM world.country;
+Para establecer el valor en la columna Population en 0 para ambas filas en la tabla country, ejecute la siguiente statement UPDATE.
+
+
+UPDATE world.country SET Population = 100, SurfaceArea = 100;
+Para verificar que la columna Population y SurfaceArea en la tabla country se actualizaron, ejecute el siguiente comando.
+
+
+SELECT * FROM world.country;
+
 
 
