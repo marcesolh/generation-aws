@@ -107,6 +107,8 @@ La tabla ahora debe contener dos filas y debe aparecer como se muestra a continu
 
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/Descripci%C3%B3n2.png)
 
+![]().
+
 Tarea 3: Actualizar filas en una tabla
 En esta tarea, actualizará ambas filas en la tabla country usand una statement UPDATE.
 Para establecer el valor en la columna Population en 0 para ambas filas en la tabla country, ejecute la siguiente statement UPDATE. 
