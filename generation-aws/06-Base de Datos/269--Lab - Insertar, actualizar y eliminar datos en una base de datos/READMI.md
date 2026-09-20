@@ -176,35 +176,36 @@ Para salir del terminal MySQL, ejecute el siguiente comando:
 ```sql
 QUIT;
 ```
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/q1.png)
 Para verificar que el archivo world.sql se haya descargado, ejecute el siguiente comando.
 ```sql
 ls /home/ec2-user/world.sql
 ```
-
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/q2.png)
 Recuperar comandos de Linux
 Insertar las filas individuales en una tabla es un proceso lento. Puede crear un archivo de script SQL que contiene un grupo de statements SQL para cargar datos rápidamente en una base de datos. Para cargar filas en la tabla country, ejecute el siguiente comando.
 ```sql
 mysql -u root --password='re:St@rt!9' < /home/ec2-user/world.sql
 ```
-
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/q3.png)
 Este archivo de base de datos agrega dos tablas adicionales e inserta datos en las tres etiquetas.
 
 Para reconectarse a la base de datos, ejecute el siguiente comando.
 ```sql
 mysql -u root --password='re:St@rt!9'
 ```
-
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/q4.png)
 Para verificar que el script se ejecutó correctamente, ejecute el siguiente comando.
 ```sql
 USE world;
 SHOW TABLES;
 ```
-
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/q5.png)
 Observe haya tres tablas llamadas city, country y countrylanguage.
 
 Para verificar que las filas se cargaron correctamente, ejecute el siguiente comando.
 ```sql
 SELECT * FROM country;
 ```
-
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/img/q6.png)
 
