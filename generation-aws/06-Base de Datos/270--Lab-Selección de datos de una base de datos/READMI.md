@@ -149,7 +149,13 @@ SELECT Name, Capital, Region, SurfaceArea AS "Surface Area", Population FROM wor
 
 
 Para obtener más información acerca de los operadores de comparación, consulte la sección Recursos adicionales al final del laboratorio.
+Para obtener más información acerca de las funciones y operadores de bases de datos, consulte los siguientes recursos:
 
+[Statement SELECT](https://mariadb.com/docs?q=select)
+[Función Count](https://mariadb.com/docs/server/reference/sql-functions/aggregate-functions/count)
+[Order By](https://mariadb.com/docs/server/reference/sql-statements/data-manipulation/selecting-data/order-by)
+[Operadores](https://mariadb.com/docs/server/reference/sql-structure/operators)
 [operadores de comparación](https://mariadb.com/docs/server/reference/sql-structure/operators/comparison-operators)
+
 
 
