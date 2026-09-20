@@ -3,13 +3,6 @@
 ## 📋 Escenario
 El equipo de operaciones de base de datos creó una base de datos relacional llamada world que contiene tres tablas: city, country y countrylanguage. Según los casos prácticos específicos definidos en el ejercicio de laboratorio, escribirá algunas consultas usando operadores de base de datos y la statement SELECT.
 
-
-
-## 🛠️ Tecnologías y Herramientas Utilizadas
-* **Base de Datos / Motor:** (Ej. PostgreSQL, MySQL, Amazon RDS, etc.)
-* **Herramienta de Consulta (IDE):** (Ej. DBeaver, pgAdmin, MySQL Workbench, etc.)
-* **Conceptos aplicados:** (Ej. INNER JOIN, GROUP BY, Subconsultas, Índices, etc.)
-
 ## 🚀 Información general y objetivos del laboratorio
 Este laboratorio muestra cómo usar algunas operaciones de bases de datos comunes y la statement SELECT.
 Después de completar este laboratorio, podrá realizar lo siguiente:
@@ -28,12 +21,12 @@ Después de completar este laboratorio, podrá realizar lo siguiente:
   AND
 ```
 Cuando comience este en laboratorio, los siguientes recursos ya estarán creados para usted:
-![]()
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/270--Lab-Selecci%C3%B3n%20de%20datos%20de%20una%20base%20de%20datos/270/Cap1.png)
 
 Una instancia de Command Host y una base de datos world que contiene tres tablas
 Al final de este laboratorio, habrá usado la statement SELECT y algunas operaciones de base de datos comunes:
 
-![]()
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/270--Lab-Selecci%C3%B3n%20de%20datos%20de%20una%20base%20de%20datos/270/Cap2.png)
 
 Un usuario de laboratorio está conectado a una instancia de base de datos. También muestra algunas operaciones de base de datos que se usan con frecuencia.
 
@@ -51,6 +44,9 @@ Junto a la instancia etiquetada Command Host, seleccione la casilla  y luego sel
 
 Nota: Si no ve Command Host, probablemente el laboratorio aún está siendo aprovisionado, o quizás esté usando otra Región.
 
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/270--Lab-Selecci%C3%B3n%20de%20datos%20de%20una%20base%20de%20datos/270/270-1.png
+)
+
 Para Connect to instance (Conectarse a instancia), seleccione la pestaña Session Manager.
 
 Seleccione Connect (Conectar) para abrir una ventana de terminal.
@@ -64,12 +60,13 @@ Para configurar la terminal para acceder a todas las herramientas y recursos nec
 sudo su
 cd /home/ec2-user/
 ```
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/270--Lab-Selecci%C3%B3n%20de%20datos%20de%20una%20base%20de%20datos/270/Cap3.png)
 Para conectarse al servicio de base de datos, ejecute el siguiente comando en el terminal. Se configuró una contraseña cuando se instaló la base de datos.
 
 ```sql
 mysql -u root --password='re:St@rt!9'
 ```
-
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/270--Lab-Selecci%C3%B3n%20de%20datos%20de%20una%20base%20de%20datos/270/270-2.png)
 ## Tarea 2: Consulte la base de datos world
 
 En esta tarea, consultará la base de datos world usando varias statement SELECT y funciones de la base de datos.
@@ -77,45 +74,64 @@ Para mostrar las bases de datos existentes, ingrese el siguiente comando en el t
 ```sql
 SHOW DATABASES;
 ```
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/270--Lab-Selecci%C3%B3n%20de%20datos%20de%20una%20base%20de%20datos/270/270-3.png
+)
 Verifique que la base de datos llamada world esté disponible. Si la base de datos world no está disponible, póngase en contacto con su instructor.
 
 Para mostrar una lista de todas las columnas y sus propiedades en la tabla country, ejecute la siguiente consulta.
 ```sql
 SELECT * FROM world.country;
 ```
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/270--Lab-Selecci%C3%B3n%20de%20datos%20de%20una%20base%20de%20datos/270/5.png)
+
 Para consultar la cantidad de filas en una tabla, puede usar la función COUNT() en una statement SELECT. Para contar todas las filas en la tabla, puede usar COUNT(*). Para contar la cantidad de filas que tienen un valor en una columna específica, incluya nombre de la columna como un parámetro en la función COUNT(): por ejemplo, COUNT(Population). Para una lista de la cantidad de filas en la tabla country, ejecute la siguiente consulta.
 ```sql
 SELECT COUNT(*) FROM world.country;
 ```
-
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/270--Lab-Selecci%C3%B3n%20de%20datos%20de%20una%20base%20de%20datos/270/5.png)
 Por una lista de todas las columnas en la tabla country, ejecute la siguiente consulta. Esta consulta se ejecuta para comprender el esquema de la tabla.
 ```sql
 SHOW COLUMNS FROM world.country;
 ```
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/270--Lab-Selecci%C3%B3n%20de%20datos%20de%20una%20base%20de%20datos/270/6.png)
+
 Para consultar columnas específicas en la tabla world, ejecute la siguiente consulta para arrojar un conjunto de resultados que incluya las columnas Name, Capital, Region, SurfaceArea y Population.
 ```sql
 SELECT Name, Capital, Region, SurfaceArea, Population FROM world.country;
 ```
+
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/270--Lab-Selecci%C3%B3n%20de%20datos%20de%20una%20base%20de%20datos/270/7.png)
+
 Los nombres de columnas de la base de datos en ocasiones no son fáciles de usar para los usuarios. Para agregar un nombre de columna más descriptivo al resultado de la consulta, puede usar la opción AS. Ejecute la siguiente consulta que incluya esta opción.
 ```sql
 SELECT Name, Capital, Region, SurfaceArea AS "Surface Area", Population FROM world.country;
 ```
+
+![]()cap5
+
 De ser necesario, desplazarse hasta la parte superior de los resultados de la consulta y observe que la columna SurfaceArea se muestre como Surface Area.
+
 
 Los conjuntos de resultados ordenados son más fáciles de ver y trabajar con ellos. Si quiere ordenar el resultado según una columna, puede usar la opción ORDER BY. En este ejemplo,ordenará los resultados según la población.
 ```sql
 SELECT Name, Capital, Region, SurfaceArea AS "Surface Area", Population FROM world.country ORDER BY Population;
 ```
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/270--Lab-Selecci%C3%B3n%20de%20datos%20de%20una%20base%20de%20datos/270/8.png)
+
 La opción ORDER BY ordena los datos en orden ascendente.
 
 Para ordenar los datos en orden descendente, use la opción DESC con ORDER BY. Ejecute el siguiente comando con esta opción.  
 ```sql
 SELECT Name, Capital, Region, SurfaceArea AS "Surface Area", Population FROM world.country ORDER BY Population DESC;
 ```
+![]() cap6
+
 Puede agregar condiciones a las statements SELECT usando la cláusula WHERE. Por ejemplo, para listar todas las filas con una población mayor de 50.000.000, ejecute la siguiente consulta.
 ```sql
 SELECT Name, Capital, Region, SurfaceArea AS "Surface Area", Population FROM world.country WHERE Population > 50000000 ORDER BY Population DESC;
 ```
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/270--Lab-Selecci%C3%B3n%20de%20datos%20de%20una%20base%20de%20datos/270/9.png)
+
 Usó el operador de comparación >. De forma similar, puede usar otros operadores de comparación para comparar valores.
 
 Puede construir una cláusula WHERE usando una serie de condiciones y operadores. 
@@ -124,6 +140,9 @@ La siguiente consulta usa dos condiciones: todas las filas con una población ma
 ```sql
 SELECT Name, Capital, Region, SurfaceArea AS "Surface Area", Population FROM world.country WHERE Population > 50000000 AND Population < 100000000 ORDER BY Population DESC;
 ```
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/270--Lab-Selecci%C3%B3n%20de%20datos%20de%20una%20base%20de%20datos/270/10.png)
+
+
 Para obtener más información acerca de los operadores de comparación, consulte la sección Recursos adicionales al final del laboratorio.
 
 ![operadores de comparación](https://mariadb.com/docs/server/reference/sql-structure/operators/comparison-operators)
