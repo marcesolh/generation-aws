@@ -152,7 +152,9 @@ SELECT * FROM world.country;
 
 
 
+
 Tarea 4: Eliminar filas de una tabla
+
 En esta tarea, actualizará ambas filas en la tabla country usando una statement DELETE. 
 
 Tenga cuidado cuando use statements de manipulación de datos como UPDATE y DELETE ya que estos cambios pueden no ser reversibles. 
