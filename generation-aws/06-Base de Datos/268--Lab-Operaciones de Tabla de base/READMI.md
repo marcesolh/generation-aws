@@ -85,4 +85,75 @@ El cliente de línea de comandos MySQL es un shell SQL que puede usar para inter
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/268--Lab-Operaciones%20de%20Tabla%20de%20base/268/Cap9.png)
 
 
+## Tarea 2: Crear una base de datos y una tabla
+En esta tarea, creará una base de datos llamada world y una tabla llamada country. Luego, alterará la tabla country.
 
+Para mostrar las bases de datos existentes, ejecute la siguiente consulta. 
+```sql
+SHOW DATABASES;
+```
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/268--Lab-Operaciones%20de%20Tabla%20de%20base/268/Cap10.png)
+
+Para determinar la base de datos disponible y asegurar que está trabajando con la instancia de base de datos correcta, use el comando SHOW DATABASES;(MOSTRAR BASES DE DATOS). 
+
+Para crear una nueva base de datos llamada world, ejecute en el siguiente comando.
+```sql
+CREATE DATABASE world;
+```
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/268--Lab-Operaciones%20de%20Tabla%20de%20base/268/Cap11.png)
+
+Para verificar que la base de datos world se haya creado, ejecute la siguiente consulta. 
+```sql
+SHOW DATABASES;
+```
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/268--Lab-Operaciones%20de%20Tabla%20de%20base/268/Cap12.png)
+
+Para almacenar datos en una base de datos, la base de datos debe contener una o más tablas. En una base de datos SQL, una tabla debe tener una estructura bien definida, conocida como el esquema de tabla Para crear una tabla llamada country, ejecute el siguiente comando.  
+```sql
+CREATE TABLE world.country (
+  `Code` CHAR(3) NOT NULL DEFAULT '',
+  `Name` CHAR(52) NOT NULL DEFAULT '',
+  `Conitinent` enum('Asia','Europe','North America','Africa','Oceania','Antarctica','South  America') NOT NULL DEFAULT 'Asia',
+  `Region` CHAR(26) NOT NULL DEFAULT '',
+  `SurfaceArea` FLOAT(10,2) NOT NULL DEFAULT '0.00',
+  `IndepYear` SMALLINT(6) DEFAULT NULL,
+  `Population` INT(11) NOT NULL DEFAULT '0',
+  `LifeExpectancy` FLOAT(3,1) DEFAULT NULL,
+  `GNP` FLOAT(10,2) DEFAULT NULL,
+  `GNPOld` FLOAT(10,2) DEFAULT NULL,
+  `LocalName` CHAR(45) NOT NULL DEFAULT '',
+  `GovernmentForm` CHAR(45) NOT NULL DEFAULT '',
+  `HeadOfState` CHAR(60) DEFAULT NULL,
+  `Capital` INT(11) DEFAULT NULL,
+  `Code2` CHAR(2) NOT NULL DEFAULT '',
+  PRIMARY KEY (`Code`)
+);
+```
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/268--Lab-Operaciones%20de%20Tabla%20de%20base/268/Cap13.png)
+
+Para verificar que se haya creado la tabla country, use el comando SHOW TABLES; (MOSTRAR TABLAS) para mostrar una lista de las tablas en la base de datos. El comando USE (USAR) se usa para especificar contra cuál base de datos se debe ejecutar una consulta. Ejecute los siguientes comandos en el terminal. 
+```sql
+USE world;
+SHOW TABLES;
+```
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/268--Lab-Operaciones%20de%20Tabla%20de%20base/268/Cap14.png)
+
+Use la consulta SHOW COLUMNS (MOSTRAR COLUMNAS) para mostrar una lista de todas las columnas en una tabla. Ejecute la siguiente consulta para mostrar una lista de todas las columnas y sus propiedades en la tabla country.
+```sql
+SHOW COLUMNS FROM world.country;
+```
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/268--Lab-Operaciones%20de%20Tabla%20de%20base/268/Cap15.png)
+
+Nota: Tenga en cuenta que la columna Continent está mal escrita como Conitinent. 
+
+El comando ALTER TABLE (ALTERAR TABLA) se usa para alterar el esquema de la tabla. Para corregir el error tipográfico de la columna Continent, ejecute el siguiente comando.
+```sql
+ALTER TABLE world.country RENAME COLUMN Conitinent TO Continent;
+```
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/268--Lab-Operaciones%20de%20Tabla%20de%20base/268/Cap16.png)
+
+Para verificar que se corrigió el nombre de la columna Continent en la tabla country, ejecute la siguiente consulta.
+```sql
+SHOW COLUMNS FROM world.country;
+```
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/268--Lab-Operaciones%20de%20Tabla%20de%20base/268/Cap17.png)
