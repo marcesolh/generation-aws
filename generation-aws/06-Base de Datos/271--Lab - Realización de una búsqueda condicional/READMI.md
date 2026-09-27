@@ -15,15 +15,14 @@ Este laboratorio muestra cómo usar la statement SELECT y una cláusula WHERE pa
 Después de completar este laboratorio, podrá realizar lo siguiente:
 
 Escribir una condición de búsqueda usando la cláusula WHERE
-Usar el operador BETWEEN
-Usar el operador LIKE con caracteres de comodín
-Usar el operador AS para crear un alias de columna
-Usar funciones en una statement SELECT
-Usar funciones en una cláusula WHERE
-Cuando comience este en laboratorio, los siguientes recursos ya estarán creados para usted:
-Cuando comience este en laboratorio, los siguientes recursos ya estarán creados para usted:
+* Usar el operador BETWEEN
+* Usar el operador LIKE con caracteres de comodín
+* Usar el operador AS para crear un alias de columna
+* Usar funciones en una statement SELECT
+* Usar funciones en una cláusula WHERE
+* Cuando comience este en laboratorio, los siguientes recursos ya estarán creados para usted:
 
-![]()
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/271--Lab%20-%20Realizaci%C3%B3n%20de%20una%20b%C3%BAsqueda%20condicional/271/Cap01.png)
 
 Una instancia de Command Host y una base de datos world que contiene tres tablas
 Al final de este laboratorio, habrá usado la statement SELECT y algunas operaciones de base de datos comunes:
