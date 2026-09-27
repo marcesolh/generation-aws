@@ -1,6 +1,7 @@
 # Laboratorio / Práctica: Organización de datos
 
 Escenario
+
 El equipo de operaciones de base de datos creó una base de datos relacional llamada world que contiene tres tablas: city, country y countrylanguage. Ayudará a escribir algunas consultas a los registros de grupo para su análisis usando ambas cláusulas GROUP BY y OVER.
 
 
