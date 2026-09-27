@@ -1,8 +1,7 @@
-# Laboratorio / Práctica: Selección de datos de una base de datos
+# Laboratorio / Práctica: Realización de una búsqueda condicional
 
 ## 📋 Escenario
-El equipo de operaciones de base de datos creó una base de datos relacional llamada world que contiene tres tablas: city, country y countrylanguage. Según los casos prácticos específicos definidos en el ejercicio de laboratorio, escribirá algunas consultas usando operadores de base de datos y la statement SELECT.
-
+El equipo de operaciones de base de datos creó una base de datos relacional llamada world que contiene tres tablas: city, country y countrylanguage. Para ayudar al equipo, escribirá algunas consultas para buscar registros en la tabla country usando la statement SELECT y una cláusula WHERE.
 
 
 ## 🛠️ Tecnologías y Herramientas Utilizadas
@@ -11,23 +10,19 @@ El equipo de operaciones de base de datos creó una base de datos relacional lla
 * **Conceptos aplicados:** (Ej. INNER JOIN, GROUP BY, Subconsultas, Índices, etc.)
 
 ## 🚀 Información general y objetivos del laboratorio
-Este laboratorio muestra cómo usar algunas operaciones de bases de datos comunes y la statement SELECT.
+Este laboratorio muestra cómo usar la statement SELECT y una cláusula WHERE para filtrar los registros con una búsqueda condicional.
+
 Después de completar este laboratorio, podrá realizar lo siguiente:
 
-* Usar la statement SELECT para consultar una base de datos
-
-* Usar la función COUNT ()
-
-## Use las siguientes operaciones para consultar una base de datos:
-```sql
-  <
-  >
-  =
-  WHERE
-  ORDER BY
-  AND
-```
+Escribir una condición de búsqueda usando la cláusula WHERE
+Usar el operador BETWEEN
+Usar el operador LIKE con caracteres de comodín
+Usar el operador AS para crear un alias de columna
+Usar funciones en una statement SELECT
+Usar funciones en una cláusula WHERE
 Cuando comience este en laboratorio, los siguientes recursos ya estarán creados para usted:
+Cuando comience este en laboratorio, los siguientes recursos ya estarán creados para usted:
+
 ![]()
 
 Una instancia de Command Host y una base de datos world que contiene tres tablas
