@@ -121,6 +121,7 @@ SELECT Region, Name, Population, RANK() OVER(partition by Region ORDER BY Popula
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/273--Lab%20-%20Organizaci%C3%B3n%20de%20datos/273/Cap10.png)
 
 resultado de filas.
+
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/273--Lab%20-%20Organizaci%C3%B3n%20de%20datos/273/Cap11.png)
 
 ## Conclusión
@@ -135,14 +136,15 @@ Aprendió a realizar correctamente las siguientes actividades:
 
 Para obtener más información acerca de las funciones y operadores de bases de datos, consulte los siguientes recursos:
 
-[Cláusula GROUP By]()
 
-[Clausula OVER]()
+[Cláusula GROUP By](https://mariadb.com/docs/server/reference/sql-statements/data-manipulation/selecting-data/group-by)
 
-[Función SUM]()
+[Clausula OVER](https://mariadb.com/docs/server/reference/sql-functions/special-functions/window-functions/window-functions-overview)
 
-[Función RANK]()
+[Función SUM](https://mariadb.com/docs/server/reference/sql-functions/aggregate-functions/sum)
 
-[Statements SELECT]()
+[Función RANK](https://mariadb.com/docs/server/reference/sql-functions/special-functions/window-functions/rank)
 
-[Función COUNT]()
+[Statements SELECT](https://mariadb.com/docs?q=select)
+
+[Función COUNT](https://mariadb.com/docs/server/reference/sql-functions/aggregate-functions/count)
