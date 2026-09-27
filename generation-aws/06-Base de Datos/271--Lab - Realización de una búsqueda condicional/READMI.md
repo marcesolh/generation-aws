@@ -4,11 +4,6 @@
 El equipo de operaciones de base de datos creó una base de datos relacional llamada world que contiene tres tablas: city, country y countrylanguage. Para ayudar al equipo, escribirá algunas consultas para buscar registros en la tabla country usando la statement SELECT y una cláusula WHERE.
 
 
-## 🛠️ Tecnologías y Herramientas Utilizadas
-* **Base de Datos / Motor:** (Ej. PostgreSQL, MySQL, Amazon RDS, etc.)
-* **Herramienta de Consulta (IDE):** (Ej. DBeaver, pgAdmin, MySQL Workbench, etc.)
-* **Conceptos aplicados:** (Ej. INNER JOIN, GROUP BY, Subconsultas, Índices, etc.)
-
 ## 🚀 Información general y objetivos del laboratorio
 Este laboratorio muestra cómo usar la statement SELECT y una cláusula WHERE para filtrar los registros con una búsqueda condicional.
 
