@@ -136,13 +136,21 @@ SELECT Name, substring_index(Region, "/", 1) as "Region Name 1",substring_index(
 Para obtener más información acerca de las funciones y operadores de bases de datos, consulte los siguientes recursos:
 
 [Statements SELECT](https://mariadb.com/docs?q=select)
+
 [Función Count](https://mariadb.com/docs/server/reference/sql-functions/aggregate-functions/count)
+
 [Función SUM](https://mariadb.com/docs/server/reference/sql-functions/aggregate-functions/sum)
+
 [Función AVG](https://mariadb.com/docs/server/reference/sql-functions/aggregate-functions/avg)
+
 [Función MIN](https://mariadb.com/docs/server/reference/sql-functions/aggregate-functions/min)
+
 [Función MAX](https://mariadb.com/docs/server/reference/sql-functions/aggregate-functions/max)
+
 [Función SUBSTRING_INDEX](https://mariadb.com/docs/server/reference/sql-functions/string-functions/substring_index)
+
 [Función LENGTH](https://mariadb.com/docs/server/reference/sql-functions/string-functions/length)
+
 [Función TRIM](https://mariadb.com/docs/server/reference/sql-functions/string-functions/length)
 
 
