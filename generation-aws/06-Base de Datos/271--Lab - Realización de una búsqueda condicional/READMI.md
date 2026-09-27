@@ -24,10 +24,11 @@ Escribir una condición de búsqueda usando la cláusula WHERE
 
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/271--Lab%20-%20Realizaci%C3%B3n%20de%20una%20b%C3%BAsqueda%20condicional/271/Cap01.png)
 
-Una instancia de Command Host y una base de datos world que contiene tres tablas
-Al final de este laboratorio, habrá usado la statement SELECT y algunas operaciones de base de datos comunes:
+La instancia de Command Host tiene un cliente de base de datos instalado. Usará el Command Host para consultar la base de datos world, que contiene tres tablas.
 
-![]()
+Al final de este laboratorio, habrá aprendido a usar la cláusula WHERE, el operador BETWEEN y la función LIKE para filtrar registros:
+
+![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/271--Lab%20-%20Realizaci%C3%B3n%20de%20una%20b%C3%BAsqueda%20condicional/271/Cap02.png)
 
 Un usuario de laboratorio está conectado a una instancia de base de datos. También muestra algunas operaciones de base de datos que se usan con frecuencia.
 
