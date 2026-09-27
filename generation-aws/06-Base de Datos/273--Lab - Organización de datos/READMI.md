@@ -119,6 +119,8 @@ Resultado:
 SELECT Region, Name, Population, RANK() OVER(partition by Region ORDER BY Population desc) as 'Ranked' FROM world.country order by Region, Ranked;
 ```
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/273--Lab%20-%20Organizaci%C3%B3n%20de%20datos/273/Cap10.png)
+
+resultado de filas.
 ![](https://github.com/marcesolh/generation-aws/blob/main/generation-aws/06-Base%20de%20Datos/273--Lab%20-%20Organizaci%C3%B3n%20de%20datos/273/Cap11.png)
 
 ## Conclusión
