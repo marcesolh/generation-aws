@@ -81,9 +81,9 @@ En la lista desplegable, elija Number (Número).
 Se agregará un nuevo atributo de número.
 
 Para el nuevo atributo, escriba lo siguiente:
-  * FIELD: Year
+  * FIELD: `Year`
 
-  * VALUE: 1973
+  * VALUE: `1973`
 
 Seleccione Create item (Crear elemento).
 
